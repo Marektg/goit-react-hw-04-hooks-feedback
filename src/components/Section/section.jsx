@@ -1,16 +1,15 @@
 import React from "react";
 
-class Section extends React.Component {
+const Section = ({ title, children }) => {
 
-    render() {
-        const { title , children} = this.props;
+   
         return (
             <>
                 <h2>{title}</h2>
                 {children}
             </>
         )
-    }
+    
 }
 
 export default Section;

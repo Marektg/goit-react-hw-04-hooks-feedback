@@ -1,11 +1,11 @@
 import React from "react";
 
-class FeedbackOptions extends React.Component {
+const FeedbackOptions = ({ options, onLeaveFeedback }) =>{
     
 
    
-    render() {
-        const { options, onLeaveFeedback } = this.props;
+  
+      
         return (
             <>
                
@@ -73,7 +73,7 @@ class FeedbackOptions extends React.Component {
             </>
 
         )
-    }
+    
 }
 
 export default FeedbackOptions;

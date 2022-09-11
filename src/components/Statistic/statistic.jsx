@@ -1,8 +1,7 @@
 import React from "react";
 
-class Statistic extends React.Component {
-    render() {
-        const { good, neutral, bad, total, positivePercentage } = this.props;
+const Statistic = ({ good, neutral, bad, total, positivePercentage }) => {
+   
         return (
             <>
                                 <div>
@@ -15,7 +14,7 @@ class Statistic extends React.Component {
             </>
 
         )
-    }
+    
 }
 
 export default Statistic;
